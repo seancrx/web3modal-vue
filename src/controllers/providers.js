@@ -182,7 +182,7 @@ export class ProviderController {
                 this.setCachedProvider(id);
             }
         } catch (error) {
-            this.eventController.trigger(ERROR_EVENT);
+            this.eventController.trigger(ERROR_EVENT, error);
         }
     };
 
